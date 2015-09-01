@@ -106,6 +106,7 @@ Now let's create a script to better control our camera angles
         }
 
 * Now if you save and tab back to Unity, you can drag the "Player" object from the Hierarchy pane into the "player" field in the CameraController's component in the inspector, like so:
+
 ![Drag player onto CameraController component](http://i.imgur.com/3OE3Ssq.gif)
 
 ##Setting up the Walls
