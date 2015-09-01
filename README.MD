@@ -89,7 +89,7 @@ A Material is a texture, mapping, etc. that tells the game's rendering engine to
 * Set rotation to (45,0,0)
 
 Now let's create a script to better control our camera angles
-* Create a Script called CameraController and attach it to Camera:
+* Create a _C# Script_ called _"CameraController"_ and attach it to the Main Camera object:
 
         public GameObject player;
         
