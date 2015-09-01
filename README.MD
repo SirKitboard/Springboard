@@ -11,7 +11,7 @@ In this tutorial, we will create a simple game where you roll a ball around to c
 Unity: https://unity3d.com/get-unity/download
 
 ###Unity Layout
-Unity features a layout can is modular and customizable. Below is the "Default" layout and an explanation of the important panels.
+Unity features a layout that is modular and customizable. Below is the "Default" layout and an explanation of the important panels.
 
 ![Unity Layout](http://i.imgur.com/9aCt2rK.png)
 
@@ -79,6 +79,9 @@ A Material is a texture, mapping, etc. that tells the game's rendering engine to
 
 * Save and tab back to Unity
 * Back in the Inspector, you can set the "speed" variable in the PlayerController component (given that there are no compilation errors). A speed of 10 should work for this demonstration.
+* Now if you hit "Play" at the top of the editor, you can use the arrow keys or _WASD_ to get the ball rolling around!
+* You'll notice that the camera doesn't quite follow the ball if it rolls off-screen, so let's set up the camera to follow the ball.
+* **Don't forget to stop running the game before making any more changes!**
 
 ##Camera
 
