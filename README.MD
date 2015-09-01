@@ -33,7 +33,7 @@ _This part is going to be very particular to make sure we all stay on the same p
 
 ###Creating some GameObjects
 1. Create a Plane (GameObject > 3D Object > Plane). In the Inspector, set its name to "ground" and scale it to (2,1,2).
-2. Create a Sphere (GameObject > 3D Object > Sphere). In the Inspector, name the sphere "Player" and set it's position to (0,.5,0)
+2. Create a Sphere (GameObject > 3D Object > Sphere). In the Inspector, name the sphere "Player" and set it's position to (0,0.5,0)
 
 ###Materials
 A Material is a texture, mapping, etc. that tells the game's rendering engine to show an object differently. [Click here](http://gametextures.com/blog/2014/02/10/a-beginners-guide-to-video-game-materials/) for a more detailed explanation. We will use materials to give our objects some texture.
@@ -47,7 +47,7 @@ A Material is a texture, mapping, etc. that tells the game's rendering engine to
 
 ##Moving The Player
 1. Select the Player object. At the bottom of the inspector, click "Add Component" and add a RigidBody component. This makes the object interact as a physical object in the gameworld, subject to gravity, collisions, etc.
-2. Create a Scripts folder in the Project pane under "Assets", and create a new script inside called _PlayerController.cs_.
+2. Create a Scripts folder in the Project pane under "Assets", and create a new _C# Script_ inside called _PlayerController.cs_.
 3. Drag this script onto the Player object to add it as a component.
 4. Double-click the script name in the inspector or in the Project panel to open it in the default IDE, _MonoDevelop_ (if you have Visual Studio, Unity can be set to use that by default in Edit > Preferences > External Tools)
 4. Remove sample methods and write in:
