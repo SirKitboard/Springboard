@@ -1,16 +1,19 @@
 # Roll A Ball, Unity Tutorial
+
 ![Roll A Ball](http://i.imgur.com/2PcxbWz.gif)
 
-####Introduction
+#### Introduction
 
 Unity is a tool and engine for the development of games. It provides most of the functionality you need to rapidly and easily prototype game ideas. Unity allows scripting using C#, Javascript (called UnityScript), and the Python-esque language, Boo.
 
 In this tutorial, we will create a simple game where you roll a ball around to collect items. From there, feel free to explore the possibilities! Unity has a very large and open community, and most questions can be answered with a quick web search. For scripting our game objects, we will use C#.
 
-####Required Downloads: 
+#### Required Downloads: 
+
 Unity: https://unity3d.com/get-unity/download
 
-###Unity Layout
+### Unity Layout
+
 Unity features a layout that is modular and customizable. Below is the "Default" layout and an explanation of the important panels.
 
 ![Unity Layout](http://i.imgur.com/9aCt2rK.png)
@@ -24,18 +27,21 @@ Unity features a layout that is modular and customizable. Below is the "Default"
 
 **NOTE: Changes made while in _PLAY_ mode will be reset when the game is stopped! Make sure you only change your game while it is not running!**
 
-##Setting Up Your Project & Environment
+## Setting Up Your Project & Environment
+
 _This part is going to be very particular to make sure we all stay on the same page_
 
 1. Create new Project. Name it *Roll A Ball*
 2. Save scenes in a folder called "_Scenes_". Name it MiniGame.
 3. Change Layout (drop-down menu in the top-right corner) to 2 by 3. _This is easier to work with, but not mandatory._
 
-###Creating some GameObjects
+### Creating some GameObjects
+
 1. Create a Plane (GameObject > 3D Object > Plane). In the Inspector, set its name to "ground" and scale it to (2,1,2).
 2. Create a Sphere (GameObject > 3D Object > Sphere). In the Inspector, name the sphere "Player" and set it's position to (0,0.5,0)
 
-###Materials
+### Materials
+
 A Material is a texture, mapping, etc. that tells the game's rendering engine to show an object differently. [Click here](http://gametextures.com/blog/2014/02/10/a-beginners-guide-to-video-game-materials/) for a more detailed explanation. We will use materials to give our objects some texture.
 
 1. In the Project Pane, Create a folder called "Materials". 
@@ -45,7 +51,8 @@ A Material is a texture, mapping, etc. that tells the game's rendering engine to
 
 *Great*! Now that the we're all set up, let's get the ball rolling!
 
-##Moving The Player
+## Moving The Player
+
 1. Select the Player object. At the bottom of the inspector, click "Add Component" and add a RigidBody component. This makes the object interact as a physical object in the gameworld, subject to gravity, collisions, etc.
 2. Create a Scripts folder in the Project pane under "Assets", and create a new _C# Script_ inside called _PlayerController.cs_.
 3. Drag this script onto the Player object to add it as a component.
@@ -83,7 +90,7 @@ A Material is a texture, mapping, etc. that tells the game's rendering engine to
 * You'll notice that the camera doesn't quite follow the ball if it rolls off-screen, so let's set up the camera to follow the ball.
 * **Don't forget to stop running the game before making any more changes!**
 
-##Camera
+## Camera
 
 * Position the Main Camera object to (0, 7, -7).
 * Set rotation to (45,0,0)
@@ -109,7 +116,7 @@ Now let's create a script to better control our camera angles
 
 ![Drag player onto CameraController component](http://i.imgur.com/3OE3Ssq.gif)
 
-##Setting up the Walls
+## Setting up the Walls
 
 1. Create empty walls. Reset it to origin
 2. Create cube west wall and reset. Parent Walls
@@ -167,6 +174,7 @@ And in Start winText.text = “”
 Make reference to winText
 
 **Quit**
+
 In Player Controller create an update that waits for the escape key and quits the game.
 
 
