@@ -152,7 +152,7 @@ Public Text countText
 
 include the following piece of code:
 
-countText.text = "Count: " + count.ToString();
+    countText.text = "Count: " + count.ToString();
 
 in *both* start and on trigger.
 
@@ -166,10 +166,12 @@ Change text to Win Text. And Pos Y to 75
 Make another public text winText.
 
 In onTrigger after countText write
-if (count > [num of objects]) {
-                winText.text = "You Win!";
-            }
-And in Start winText.text = “”
+
+    if (count > [num of objects]) {
+        winText.text = "You Win!";
+    }
+
+And in Start `winText.text = “”`
 
 Make reference to winText
 
